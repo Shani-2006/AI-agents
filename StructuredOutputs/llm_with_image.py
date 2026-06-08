@@ -1,9 +1,9 @@
 from openai import OpenAI
-from typing import List,Literal
+from typing import Literal
 from pydantic import BaseModel,Field
 
 class ClothingInfo(BaseModel):
-    categoty: Literal["Dress","Coat","Shirt","Other"]=Field(description="")
+    category: Literal["Dress","Coat","Shirt","Other"]=Field(description="")
     primary_color: str=Field()
     target_age_group: str
 
