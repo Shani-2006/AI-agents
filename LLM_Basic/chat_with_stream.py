@@ -3,7 +3,7 @@ from openai import OpenAI
 client = OpenAI()
 
 def start_chat():
-    history=[{"role": "system", "content": "You are a helpful assistant."}]
+    history=[{"role": "system", "content": "You are a helpful AI assistant."}]
     while(True):
         user_input = input(">>")
         if(user_input=="."):
